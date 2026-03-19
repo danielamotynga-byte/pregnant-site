@@ -179,3 +179,13 @@ p:last-of-type a:hover { color: var(--text); }
   table { width: calc(100% - 32px); margin: 8px 16px 32px; display: block; overflow-x: auto; }
   th, td { padding: 8px 10px; white-space: nowrap; }
 }
+
+
+/* ================================================
+   АКТИВНАЯ ССЫЛКА (nav-active.js)
+   ================================================ */
+nav a.nav-active {
+  color: var(--accent) !important;
+  background: #1a0008 !important;
+}
+

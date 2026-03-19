@@ -1,5 +1,5 @@
 /* ================================================
-   weddings.css — Страница шоу
+   waited.css — Страница шоу
    ================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&family=Inter:wght@300;400;500&display=swap');
@@ -148,3 +148,13 @@ p:last-of-type a:hover { color: var(--text); }
   img  { margin: 16px; max-width: calc(100% - 32px); }
   ol   { margin: 0 16px 32px; }
 }
+
+
+/* ================================================
+   АКТИВНАЯ ССЫЛКА (nav-active.js)
+   ================================================ */
+nav a.nav-active {
+  color: var(--accent) !important;
+  background: #1a0008 !important;
+}
+
