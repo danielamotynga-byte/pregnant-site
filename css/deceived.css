@@ -89,12 +89,13 @@ h2 {
 }
 
 /* ПОСТЕР */
-img {
+.show-poster {
   display: block;
-  max-width: 280px;
   width: 100%;
-  border-radius: 10px;
+  max-width: 360px;
+  height: auto;
   margin: 20px 32px;
+  border-radius: 10px;
   box-shadow: 0 16px 48px rgba(0,0,0,0.8);
 }
 
@@ -145,7 +146,7 @@ p:last-of-type a:hover { color: var(--text); }
   h1   { padding: 28px 16px 8px; }
   h2   { padding: 28px 16px 12px; }
   p    { padding: 4px 16px; }
-  img  { margin: 16px; max-width: calc(100% - 32px); }
+  .show-poster  { max-width: calc(100% - 32px); margin: 16px; }
   ol   { margin: 0 16px 32px; }
 }
 
@@ -157,4 +158,3 @@ nav a.nav-active {
   color: var(--accent) !important;
   background: #1a0008 !important;
 }
-

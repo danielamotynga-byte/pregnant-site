@@ -4,34 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ТРЭШСТРИМ — 404</title>
-<link rel="stylesheet" href="../css/404.css">
+<base href="/pregnant-site/">
+<link rel="stylesheet" href="css/404.css">
+<link rel="stylesheet" href="css/theme.css">
 </head>
-<body>
+<body class="page-error">
 
-<nav>
-  <span>ТРЭШСТРИМ</span> |
-  <a href="index.html">Главная</a> |
-  <a href="pregnant16.html">Беременна в 16</a> |
-  <a href="deceived.html">Беременна по обману</a> |
-  <a href="muzhskoe.html">Мужское / Женское</a> |
-  <a href="khata.html">Хата на тата</a> |
-  <a href="weddings.html">4 свадьбы</a> |
-  <a href="waited.html">Ждули</a> |
-  <a href="top.html">ТОП ТРЭША</a>
-</nav>
+<?php include __DIR__ . "/../partials/nav.php"; ?>
+
+<video class="tv-video" src="../video/video.mov" autoplay loop muted playsinline></video>
 
 <div class="container">
   <div class="code">404</div>
 
-  <video class="tv-video" src="../video/video.mov" autoplay loop muted playsinline></video>
-
   <h1>Страница не найдена</h1>
   <p>Похоже, этот эпизод вырезали при монтаже.</p>
   <p class="sub">Или ты перешла по неправильной ссылке — такое тоже бывает.</p>
-  <a href="index.html" class="btn">← Вернуться на главную</a>
+  <a href="index.php" class="btn">← Вернуться на главную</a>
 </div>
 
-<script src="../js/nav-active.js"></script>
+<script src="js/nav-active.js"></script>
+<script src="js/theme.js"></script>
 
 </body>
 </html>

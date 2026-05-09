@@ -2,20 +2,14 @@
 // search.js — Поиск по шоу (только index.html)
 // ================================================
 
-const shows = [
-  { name: 'Беременна в 16',      url: 'pregnant16.html' },
-  { name: 'Беременна по обману', url: 'deceived.html'   },
-  { name: 'Мужское / Женское',   url: 'muzhskoe.html'   },
-  { name: 'Хата на тата',        url: 'khata.html'      },
-  { name: '4 свадьбы',           url: 'weddings.html'   },
-  { name: 'Ждули',               url: 'waited.html'     },
-];
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const input = document.getElementById('search-input');
   const results = document.getElementById('search-results');
-
+  
   if (!input || !results) return;
+
+  // Загрузить данные через AJAX
+  const shows = await window.getTrashstreamShows();
 
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
@@ -23,16 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!q) { results.style.display = 'none'; return; }
 
-    const filtered = shows.filter(s => s.name.toLowerCase().includes(q));
+    const filtered = shows.filter(s => s.title.toLowerCase().includes(q));
 
     if (filtered.length === 0) {
       results.innerHTML = '<div class="search-empty">Ничего не найдено</div>';
     } else {
       filtered.forEach(s => {
         const item = document.createElement('a');
-        item.href = s.url;
+        item.href = s.link;
         item.className = 'search-item';
-        item.textContent = s.name;
+        item.textContent = s.title;
         results.appendChild(item);
       });
     }

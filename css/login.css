@@ -1,0 +1,43 @@
+/* Контейнер для ссылок */
+.auth-trigger-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px; /* Расстояние между Входом и Регистрацией */
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Общий стиль ссылок в шапке */
+.auth-link {
+    color: #b0b0b0; /* Серый цвет как у остальных пунктов */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+/* Эффект при наведении */
+.auth-link:hover {
+    color: #ffffff;
+}
+
+/* Акцент на кнопке регистрации (опционально) */
+.reg-btn {
+    border: 1px solid #ff0033; /* Тонкая красная рамка */
+    padding: 4px 10px;
+    border-radius: 2px;
+    color: #ff0033;
+}
+
+.reg-btn:hover {
+    background-color: #ff0033;
+    color: #fff;
+}
+
+/* Стили для разделителя (палочки) */
+.separator {
+    color: #333;
+    margin: 0 5px;
+}

@@ -3,84 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="/pregnant-site/">
 <title>ТРЭШСТРИМ — Главная</title>
-<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/theme.css">
 </head>
-<body>
+<body class="page-home">
 
-<nav>
-  <span>ТРЭШСТРИМ</span> |
-  <a href="index.html">Главная</a> |
-  <a href="pregnant16.html">Беременна в 16</a> |
-  <a href="deceived.html">Беременна по обману</a> |
-  <a href="muzhskoe.html">Мужское / Женское</a> |
-  <a href="khata.html">Хата на тата</a> |
-  <a href="weddings.html">4 свадьбы</a> |
-  <a href="waited.html">Ждули</a> |
-  <a href="top.html">ТОП ТРЭША</a>
-</nav>
+<?php include __DIR__ . "/../partials/nav.php"; ?>
 
-<div class="search-wrap"><input id="search-input" type="text" placeholder="🔍 Поиск по шоу..."><div id="search-results"></div></div>
-<h1>ТРЭШСТРИМ</h1>
-<p>Лучшая коллекция трэш-телевидения на одной платформе.</p>
-<p>6 шоу | 1200+ эпизодов | ∞ кринжа</p>
+<header class="hero-header">
+  <div class="hero-copy">
+    <div class="hero-kicker">ТРЭШ ТВ • РЕАЛИТИ • ТОК-ШОУ</div>
+    <h1 id="hero-title">ТРЭШСТРИМ</h1>
+    <p id="hero-description">Лучшая коллекция трэш-телевидения на одной платформе.</p>
+    <p class="hero-stats">6 шоу | 1200+ эпизодов | ∞ кринжа</p>
+    <a id="hero-link" href="pregnant16.php">Открыть выбранное шоу</a>
+  </div>
+  <div class="search-wrap">
+    <input id="search-input" type="text" aria-label="Поиск по шоу" placeholder="Поиск">
+    <div id="search-results"></div>
+  </div>
+</header>
 
 <h2>Все шоу</h2>
-<table>
-  <tr>
-    <td>
-      <a href="pregnant16.html">
-        
-        <br>Беременна в 16
-      </a>
-    </td>
-    <td>
-      <a href="deceived.html">
-        
-        <br>Беременна по обману
-      </a>
-    </td>
-    <td>
-      <a href="muzhskoe.html">
-        
-        <br>Мужское / Женское
-      </a>
-    </td>
-    <td>
-      <a href="khata.html">
-        
-        <br>Хата на тата
-      </a>
-    </td>
-    <td>
-      <a href="weddings.html">
-        
-        <br>4 свадьбы
-      </a>
-    </td>
-    <td>
-      <a href="waited.html">
-        
-        <br>Ждули
-      </a>
-    </td>
-  </tr>
-</table>
+<section class="shows-feature">
+  <div class="carousel-area">
+    <button class="carousel-control carousel-control-prev" type="button" aria-label="Предыдущее шоу">‹</button>
+    <div class="show-carousel" aria-label="Все шоу">
+      <button class="show-card is-active" type="button" data-title="Беременна в 16" data-rating="9.4" data-link="pregnant16.php" data-image="image/pregnant16.jpg" data-description="Реалити о подростковой беременности: героини сталкиваются с отношениями, семьей, учебой и взрослыми решениями раньше, чем были к этому готовы.">
+        <img src="image/pregnant16.jpg" alt="Беременна в 16">
+        <span>Беременна в 16</span>
+      </button>
+      <button class="show-card" type="button" data-title="Беременна по обману" data-rating="8.7" data-link="deceived.php" data-image="image/deceived.jpg" data-description="Истории женщин, которые узнали о беременности после обмана со стороны партнера. В центре выпусков — признания, конфликты, проверки фактов и попытка понять, что делать дальше.">
+        <img src="image/deceived.jpg" alt="Беременна по обману">
+        <span>Беременна по обману</span>
+      </button>
+      <button class="show-card" type="button" data-title="Мужское / Женское" data-rating="8.9" data-link="muzhskoe.php" data-image="image/muzhskoe.jpg" data-description="Ток-шоу с громкими семейными конфликтами, сложными судьбами и разговорами, где участники пытаются доказать свою правду перед студией.">
+        <img src="image/muzhskoe.jpg" alt="Мужское / Женское">
+        <span>Мужское / Женское</span>
+      </button>
+      <button class="show-card" type="button" data-title="Хата на тата" data-rating="9.1" data-link="khata.php" data-image="image/khata.jpeg" data-description="Семейное реалити, где папа остается один на хозяйстве и проверяет, насколько он готов справляться с домом, детьми и ежедневными заботами.">
+        <img src="image/khata.jpeg" alt="Хата на тата">
+        <span>Хата на тата</span>
+      </button>
+      <button class="show-card" type="button" data-title="4 свадьбы" data-rating="8.5" data-link="weddings.php" data-image="image/weddings.jpeg" data-description="Четыре невесты оценивают свадьбы друг друга: платье, банкет, атмосферу и финальное впечатление. Побеждает та, чей праздник оказался сильнее остальных.">
+        <img src="image/weddings.jpeg" alt="4 свадьбы">
+        <span>4 свадьбы</span>
+      </button>
+      <button class="show-card" type="button" data-title="Ждули" data-rating="7.9" data-link="waited.php" data-image="image/waited.jpg" data-description="Проект о женщинах, которые строят отношения с мужчинами из мест лишения свободы и ждут их возвращения, сталкиваясь с сомнениями, осуждением и надеждой.">
+        <img src="image/waited.jpg" alt="Ждули">
+        <span>Ждули</span>
+      </button>
+    </div>
+    <button class="carousel-control carousel-control-next" type="button" aria-label="Следующее шоу">›</button>
+  </div>
 
-<h2>Рейтинг трэша</h2>
-<ol>
-  <li><a href="pregnant16.html">Беременна в 16</a> — 9.4</li>
-  <li><a href="khata.html">Хата на тата</a> — 9.1</li>
-  <li><a href="muzhskoe.html">Мужское / Женское</a> — 8.9</li>
-  <li><a href="deceived.html">Беременна по обману</a> — 8.7</li>
-  <li><a href="weddings.html">4 свадьбы</a> — 8.5</li>
-  <li><a href="waited.html">Ждули</a> — 7.9</li>
-</ol>
+  <aside class="show-info" aria-live="polite">
+    <div>
+      <span id="show-info-rating">Рейтинг 9.4</span>
+      <h3 id="show-info-title">Беременна в 16</h3>
+      <p id="show-info-description">Реалити о подростковой беременности: героини сталкиваются с отношениями, семьей, учебой и взрослыми решениями раньше, чем были к этому готовы.</p>
+    </div>
+    <a id="show-info-link" href="pregnant16.php">Открыть шоу</a>
+  </aside>
+</section>
 
-<p><a href="top.html">→ Полная таблица рейтинга</a></p>
-
-<script src="../js/nav-active.js"></script>
-<script src="../js/animations.js"></script>
-<script src="../js/search.js"></script>
+<script src="js/nav-active.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/shows-data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/show-carousel.js"></script>
 </body>
 </html>

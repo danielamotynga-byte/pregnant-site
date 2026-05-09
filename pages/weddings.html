@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<base href="/pregnant-site/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ТРЭШСТРИМ — 4 свадьбы</title>
-<link rel="stylesheet" href="../css/weddings.css">
+<link rel="stylesheet" href="css/weddings.css">
+<link rel="stylesheet" href="css/theme.css">
 </head>
-<body>
+<body class="page-show show-weddings">
 
-<nav>
-  <span>ТРЭШСТРИМ</span> |
-  <a href="index.html">Главная</a> |
-  <a href="pregnant16.html">Беременна в 16</a> |
-  <a href="deceived.html">Беременна по обману</a> |
-  <a href="muzhskoe.html">Мужское / Женское</a> |
-  <a href="khata.html">Хата на тата</a> |
-  <a href="weddings.html">4 свадьбы</a> |
-  <a href="waited.html">Ждули</a> |
-  <a href="top.html">ТОП ТРЭША</a>
-</nav>
+<?php include __DIR__ . "/../partials/nav.php"; ?>
 
 <h1>4 свадьбы</h1>
 
-
+<img src="image/weddings.jpeg" alt="4 свадьбы" class="show-poster">
 
 <p><em>«Моё платье лучше. Это объективно.»</em></p>
 <p>Канал: TLC / Пятница! | Сезонов: 10 | Эпизодов: 250+ | Рейтинг: 8.5</p>
 <p>Четыре невесты посещают свадьбы друг друга и тайно оценивают: платье, банкет, торт, место. Победительница получает медовый месяц. Но главное — атмосфера тихой ненависти и вежливых улыбок.</p>
 
+<?php include __DIR__ . "/../partials/show-interactions.php"; ?>
+
 <h2>Самые скандальные выпуски</h2>
+<p class="episode-hint">Нажмите на название выпуска, чтобы открыть просмотр.</p>
 <ol>
-  <li><strong>«Это не свадьба, это шашлыки»</strong> — Анжела поставила 2/10 за банкет. Война объявлена. (44 мин)</li>
-  <li><strong>Торт упал</strong> — Прямо во время выноса. Камера всё сняла. (46 мин)</li>
-  <li><strong>Платье за 400 000</strong> — «Дорого» — это не значит «красиво», решил зритель (43 мин)</li>
-  <li><strong>Тематическая свадьба</strong> — Тема: Средневековье. Оценки: катастрофа. (45 мин)</li>
-  <li><strong>Финальный подсчёт</strong> — Победительница в слезах. Остальные — тоже. (48 мин)</li>
+ <li><a href="https://www.vokrug.tv/video/show/mozhno_li_organizovat_svadbu_za_30_tysyach_rublei_chetyre_svadby/" target="_blank"><strong>Можно ли организовать свадьбу за 30 тысяч рублей?</strong></a> — В этом выпуске шоу «Четыре свадьбы» классическая свадьба за 500 тысяч в Волгограде, свадьба с пати басом за 50 тысяч в Краснодаре, индийская свадьба за 150 тысяч в Москве и кубинская свадьба за 30 тысяч рублей в Санкт-Петербурге.
+ (44 мин)</li>
+ <li><a href="https://www.vokrug.tv/video/show/svadba_za_50_tysyach_vs_svadba_za_800_tysyach_chetyre_svadby/" target="_blank"><strong>Свадьба за 50 тысяч VS свадьба за 800 тысяч</strong></a> — Свадьба в Калининграде за 800 тысяч рублей, свадьба в Нижнекамске за 300 тысяч в стиле бохо, деревенская свадьба в Ахтубинске за 50 тысяч рублей и классическая свадьба в Саратове за 700 тысяч рублей.
+ (46 мин)</li>
+ <li><a href="https://www.youtube.com/watch?v=xLhSUeoixs0" target="_blank"><strong>Свадьба за 1,5 млн VS свадьба за 350 тысяч</strong></a> — В этом выпуске шоу Четыре свадьбы будет греческая свадьба в Ессентуках за 1,5 млн рублей, парижская свадьба в Калининграде за 1 млн рублей, свадьба в тематике путешествий за 500 тыс. рублей в Рязани. Классическая свадьба в Калуге за 350 тыс. рублей.
+ (43 мин)</li>
+ <li><a href="https://myshows.me/view/episode/17016797/" target="_blank"><strong>Свадьба за 900 тысяч VS отмененная свадьба</strong></a> — Свадьба в Москве за 900 тысяч рублей в морском стиле, свадьба в Туле за 600 тысяч рублей в стиле рустик, свадьба в Тамбове в стиле лесное бохо с секретным бюджетом и одна отмененная свадьба.
+ (45 мин)</li>
+ <li><a href="https://www.tvmaze.com/shows/39778/cetyre-svadby/episodeguide" target="_blank"><strong>Байкерская свадьба VS классическая свадьба</strong></a> — Розовая свадьба в Москве за 230 тысяч рублей, байкерская свадьба в Москве за 50 тысяч рублей, свадьба-сюрприз в Нижнем Новгороде, классическая свадьба в Челябинске за 350 тысяч рублей.
+ (48 мин)</li>
 </ol>
 
-<p><a href="index.html">← Назад на главную</a></p>
+<p><a href="index.php">← Назад на главную</a></p>
 
-<script src="../js/nav-active.js"></script>
-<script src="../js/animations.js"></script>
+<script src="js/nav-active.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>

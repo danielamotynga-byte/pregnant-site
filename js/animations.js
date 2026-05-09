@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Добавляем класс animate всем нужным элементам
-  const targets = document.querySelectorAll('h1, h2, p, li, tr, .show-poster, table');
+  const targets = document.querySelectorAll('h1, h2, h3, p, li, .show-poster, .show-carousel, .show-info');
 
   targets.forEach((el, i) => {
     el.style.opacity = '0';

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<base href="/pregnant-site/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ТРЭШСТРИМ — Админ</title>
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+<body class="page-admin">
+
+<?php include __DIR__ . "/../partials/nav.php"; ?>
+
+<main class="admin-shell">
+  <section class="admin-hero">
+    <div>
+      <p class="admin-kicker">Панель управления</p>
+      <h1>Админпанель</h1>
+      <p>Редактируй карточки главной карусели: названия, рейтинги, описания, ссылки и постеры. Данные сохраняются в этом браузере.</p>
+    </div>
+    <div class="admin-stats">
+      <span id="shows-count">0 шоу</span>
+      <span id="average-rating">0.0 средний рейтинг</span>
+    </div>
+  </section>
+
+  <section class="admin-grid">
+    <form class="admin-form" id="show-form">
+      <h2>Карточка шоу</h2>
+      <input type="hidden" id="show-index">
+
+      <label>
+        Название
+        <input id="show-title" type="text" required>
+      </label>
+
+      <label>
+        Рейтинг
+        <input id="show-rating" type="number" min="0" max="10" step="0.1" required>
+      </label>
+
+      <label>
+        Ссылка на страницу
+        <input id="show-link" type="text" required>
+      </label>
+
+      <label>
+        Путь к постеру
+        <input id="show-image" type="text" required>
+      </label>
+
+      <label>
+        Описание
+        <textarea id="show-description" rows="5" required></textarea>
+      </label>
+
+      <div class="admin-actions">
+        <button type="submit">Сохранить</button>
+        <button type="button" id="new-show">Новое шоу</button>
+        <button type="button" id="reset-shows">Сбросить</button>
+      </div>
+    </form>
+
+    <section class="admin-preview">
+      <h2>Превью</h2>
+      <div class="preview-card">
+        <img id="preview-image" src="image/pregnant16.jpg" alt="">
+        <span id="preview-rating">Рейтинг 9.4</span>
+        <h3 id="preview-title">Беременна в 16</h3>
+        <p id="preview-description">Реалити о подростковой беременности.</p>
+      </div>
+    </section>
+  </section>
+
+  <section class="admin-list-wrap">
+    <div class="admin-list-head">
+      <h2>Шоу на главной</h2>
+      <button type="button" id="export-shows">Экспорт JSON</button>
+    </div>
+    <div class="admin-list" id="shows-list"></div>
+  </section>
+</main>
+
+<script src="js/shows-data.js"></script>
+<script src="js/nav-active.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

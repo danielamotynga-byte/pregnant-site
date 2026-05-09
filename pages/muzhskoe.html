@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<base href="/pregnant-site/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ТРЭШСТРИМ — Мужское / Женское</title>
-<link rel="stylesheet" href="../css/muzhskoe.css">
+<link rel="stylesheet" href="css/muzhskoe.css">
+<link rel="stylesheet" href="css/theme.css">
 </head>
-<body>
+<body class="page-show show-muzhskoe">
 
-<nav>
-  <span>ТРЭШСТРИМ</span> |
-  <a href="index.html">Главная</a> |
-  <a href="pregnant16.html">Беременна в 16</a> |
-  <a href="deceived.html">Беременна по обману</a> |
-  <a href="muzhskoe.html">Мужское / Женское</a> |
-  <a href="khata.html">Хата на тата</a> |
-  <a href="weddings.html">4 свадьбы</a> |
-  <a href="waited.html">Ждули</a> |
-  <a href="top.html">ТОП ТРЭША</a>
-</nav>
+<?php include __DIR__ . "/../partials/nav.php"; ?>
 
 <h1>Мужское / Женское</h1>
 
-
+<img src="image/muzhskoe.jpg" alt="Мужское / Женское" class="show-poster">
 
 <p><em>«Кто виноват — сейчас разберёмся!»</em></p>
 <p>Канал: Первый канал | Сезонов: 12 | Эпизодов: 500+ | Рейтинг: 8.9</p>
 <p>Александр Гордон и Юлия Барановская разбирают самые острые семейные конфликты страны. Измены, дележ имущества, дети-маугли, соседи из ада — всё в прямом эфире с криками из зала.</p>
 
+<?php include __DIR__ . "/../partials/show-interactions.php"; ?>
+
 <h2>Легендарные выпуски</h2>
+<p class="episode-hint">Нажмите на название выпуска, чтобы открыть просмотр.</p>
 <ol>
-  <li><strong>«Мой муж — чужой человек»</strong> — 17 лет брака и один случайный звонок (58 мин)</li>
-  <li><strong>Дети в подвале</strong> — Соседи вызвали полицию. Родители в студии. (62 мин)</li>
-  <li><strong>«Она съела мою кошку»</strong> — Соседский конфликт, вышедший из-под контроля (55 мин)</li>
-  <li><strong>Три жены одного мужа</strong> — Все трое пришли в студию. Одновременно. (65 мин)</li>
-  <li><strong>Зал против всех</strong> — Эпизод, где зрители чуть не подрались на записи (60 мин)</li>
+ <li><a href="https://www.ivi.tv/watch/muzhskoe-zhenskoe" target="_blank"><strong>«Мой муж — чужой человек»</strong></a> — 17 лет брака и один случайный звонок (58 мин)</li>
+ <li><a href="https://www.ivi.tv/watch/muzhskoe-zhenskoe/207519" target="_blank"><strong>Дети в подвале</strong></a> — Соседи вызвали полицию. Родители в студии. (62 мин)</li>
+ <li><a href="https://www.ivi.tv/watch/muzhskoe-zhenskoe" target="_blank"><strong>«Она съела мою кошку»</strong></a> — Соседский конфликт, вышедший из-под контроля (55 мин)</li>
+ <li><a href="https://www.ivi.tv/watch/muzhskoe-zhenskoe" target="_blank"><strong>Три жены одного мужа</strong></a> — Все трое пришли в студию. Одновременно. (65 мин)</li>
+ <li><a href="https://www.ivi.tv/watch/muzhskoe-zhenskoe" target="_blank"><strong>Зал против всех</strong></a> — Эпизод, где зрители чуть не подрались на записи (60 мин)</li>
 </ol>
 
-<p><a href="index.html">← Назад на главную</a></p>
+<p><a href="index.php">← Назад на главную</a></p>
 
-<script src="../js/nav-active.js"></script>
-<script src="../js/animations.js"></script>
+<script src="js/nav-active.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>

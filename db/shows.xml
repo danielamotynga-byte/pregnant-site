@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shows>
+    <show>
+        <id>1</id>
+        <slug>pregnant16</slug>
+        <title>Беременна в 16</title>
+        <rating>9.4</rating>
+        <image>image/pregnant16.jpg</image>
+        <description>Реалити о подростковой беременности: героини сталкиваются с отношениями, семьей, учебой и взрослыми решениями раньше, чем были к этому готовы.</description>
+        <link>pregnant16.php</link>
+        <channel>Ю</channel>
+        <seasons>9</seasons>
+        <episodes>300+</episodes>
+    </show>
+    <show>
+        <id>2</id>
+        <slug>deceived</slug>
+        <title>Беременна по обману</title>
+        <rating>8.7</rating>
+        <image>image/deceived.jpg</image>
+        <description>Истории женщин, которые узнали о беременности после обмана со стороны партнера. В центре выпусков — признания, конфликты, проверки фактов и попытка понять, что делать дальше.</description>
+        <link>deceived.php</link>
+        <channel>Ю</channel>
+        <seasons>8</seasons>
+        <episodes>250+</episodes>
+    </show>
+    <show>
+        <id>3</id>
+        <slug>muzhskoe</slug>
+        <title>Мужское / Женское</title>
+        <rating>8.9</rating>
+        <image>image/muzhskoe.jpg</image>
+        <description>Ток-шоу с громкими семейными конфликтами, сложными судьбами и разговорами, где участники пытаются доказать свою правду перед студией.</description>
+        <link>muzhskoe.php</link>
+        <channel>ТВ-3</channel>
+        <seasons>15</seasons>
+        <episodes>600+</episodes>
+    </show>
+    <show>
+        <id>4</id>
+        <slug>khata</slug>
+        <title>Хата на тата</title>
+        <rating>9.1</rating>
+        <image>image/khata.jpeg</image>
+        <description>Семейное реалити, где папа остается один на хозяйстве и проверяет, насколько он готов справляться с домом, детьми и ежедневными заботами.</description>
+        <link>khata.php</link>
+        <channel>1+1</channel>
+        <seasons>7</seasons>
+        <episodes>200+</episodes>
+    </show>
+    <show>
+        <id>5</id>
+        <slug>weddings</slug>
+        <title>4 свадьбы</title>
+        <rating>8.5</rating>
+        <image>image/weddings.jpeg</image>
+        <description>Четыре невесты оценивают свадьбы друг друга: платье, банкет, атмосферу и финальное впечатление. Побеждает та, чей праздник оказался сильнее остальных.</description>
+        <link>weddings.php</link>
+        <channel>Пятница!</channel>
+        <seasons>5</seasons>
+        <episodes>150+</episodes>
+    </show>
+    <show>
+        <id>6</id>
+        <slug>waited</slug>
+        <title>Ждули</title>
+        <rating>7.9</rating>
+        <image>image/waited.jpg</image>
+        <description>Проект о женщинах, которые строят отношения с мужчинами из мест лишения свободы и ждут их возвращения, сталкиваясь с сомнениями, осуждением и надеждой.</description>
+        <link>waited.php</link>
+        <channel>ТВ-3</channel>
+        <seasons>4</seasons>
+        <episodes>120+</episodes>
+    </show>
+</shows>

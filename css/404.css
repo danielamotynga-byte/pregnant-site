@@ -21,8 +21,9 @@ body {
   color: var(--text);
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* НАВИГАЦИЯ */
@@ -60,8 +61,12 @@ nav a.nav-active { color: var(--accent); background: #1a0008; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 48px 32px;
+  padding: 48px 0;
   gap: 16px;
+  width: 100%;
+  max-width: 100%;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .code {
@@ -77,11 +82,17 @@ nav a.nav-active { color: var(--accent); background: #1a0008; }
 }
 
 .tv-video {
-  width: 280px;
-  height: 280px;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 56px);
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 16px 48px rgba(255, 45, 85, 0.3);
+  z-index: -1;
+}
+
+.fullwidth-banner {
+  display: none;
 }
 
 h1 {
